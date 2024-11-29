@@ -72,9 +72,9 @@ const upDateBalanceValues = () => {
         .toFixed(2);
     const expense = getExpenses(transactionsAmounts) 
     //console.log(expense)
-    balanceDisplay.textContent = `R$ ${total}`;
-    incomeDisplay.textContent = `R$ ${income}`;
-    expenseDisplay.textContent = `R$ ${expense}`;
+    balanceDisplay.textContent = `R$ ${total}`
+    incomeDisplay.textContent = `R$ ${income}`
+    expenseDisplay.textContent = `R$ ${expense}`
 };
 
 const init = () => {
@@ -88,8 +88,6 @@ init()
 const upDateLocalStorage = () => {
     localStorage.setItem('transactions', JSON.stringify(transactions));
 }
-
-
 
 const generateID = () => Math.round(Math.random() * 1000)
 
